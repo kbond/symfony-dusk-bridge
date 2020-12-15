@@ -1,0 +1,33 @@
+{
+    "name": "zenstruck/symfony-dusk-bridge",
+    "description": "Use Laravel Dusk in your Symfony app.",
+    "homepage": "https://github.com/kbond/symfony-dusk-bridge",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["test", "symfony", "laravel", "dusk", "bridge", "e2e"],
+    "authors": [
+        {
+            "name": "Kevin Bond",
+            "email": "kevinbond@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "laravel/dusk": "^6.9",
+        "symfony/panther": "dev-main"
+    },
+    "require-dev": {
+        "symfony/framework-bundle": "^5.2",
+        "symfony/phpunit-bridge": "^5.2"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": { "Symfony\\Bridge\\Dusk\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Symfony\\Bridge\\Dusk\\Tests\\": "tests/" }
+    }
+}
